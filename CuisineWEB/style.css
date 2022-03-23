@@ -1,0 +1,148 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  
+  body {
+  
+  }
+  
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  header {
+    height: 40px;
+    width: 100%;
+  }
+  header ul{
+    width: 100%;
+    margin-left: 50%;
+  }
+  header ul li{
+    float: left;
+    list-style-type: none;
+    width: 5%;
+
+  }
+  header img{
+
+    float:left;
+  }
+
+main{
+    background-image: url(http://placekitten.com/g/300/350);
+    height: 700px;
+}
+
+main section{
+    font-size: larger;
+    font-weight: bolder;
+    color: lawngreen;
+    padding-top: 200px;
+    padding-left: 50px;
+}
+main section ul{
+    width: 50%;
+
+}
+main section ul li{
+    list-style-type: none;
+    float: left;
+    width: 5%;
+    font-weight: bolder;
+    font-size: 79%;
+    color: lawngreen;
+}
+  
+main + section{
+    background-image: url(http://placekitten.com/g/400/350);
+    height: 700px;
+    color:lawngreen;
+    padding-top: 150px;
+    text-align: center;
+}
+main + section p{
+    margin-left: 350px;
+    width: 50%;
+}
+main + section a:last-of-type{
+    display: block;
+    color: lawngreen;
+}
+
+section + section {
+    height: 700px;
+    color: lawngreen;
+    background-image: url(http://placekitten.com/g/401/350);
+    text-align: center;
+}
+section + section ul{
+    float: left;
+    width: 100%;
+    margin-left: 25%;
+}
+section + section ul li{
+    list-style-type: none;
+    float: left;
+    width: 12%;
+}
+section + section ul li a{
+    color: lawngreen;
+}
+section + section ul + ul{
+    padding: 0;
+    margin: 0;
+}
+section + section img{
+    float: left;
+    margin-left: 3%;
+}
+section:last-of-type span, section:last-of-type{
+    display: block;
+    font-size: larger;
+}
+section:last-of-type img {
+    margin-left: 30%;
+    display: block;
+    
+}
+
+
+footer{
+    background-image: url(http://placekitten.com/g/402/350);
+    height: 700px;
+    color: lawngreen;
+    text-align: center;
+    padding-top: 60px;
+}
+footer p{
+    margin-left: 20%;
+    text-align: center;
+}
+
+
+
+  
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  
